@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wintech</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Full Screen Mode -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="manifest" href="./manifest.json">
+
+	<!-- Status Bar Style -->
+	<meta name="theme-color" content="#0e4d8e">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#0e4d8e">
+	<meta name="msapplication-navbutton-color" content="#0e4d8e">
+
+	<meta name="handheldfriendly" content="True" />
+	<meta name="mobileoptimized" content="320" />
+	<meta http-equiv="cleartype" content="on" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" sizes="96x96" href="./favicon/icon_96.png">
+	<link rel="shortcut icon" sizes="144x144" href="./favicon/icon_144.png">
+	<link rel="shortcut icon" sizes="192x192" href="./favicon/icon_192.png">
+	<link rel="shortcut icon" sizes="512x512" href="./favicon/icon_512.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon/icon_144.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/icon_192.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon.png">
+
+	<!-- Font -->
+	<link rel="stylesheet" type="text/css" href="./font/iransans/css/fontstyle.css">
+	<!-- Note CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./css/notejs.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+</head>
+<body>
+	<div class="help">
+		<div class="helpBtn">
+			<img src="img/swipe-helper.gif" />
+			<!-- <p>کتاب را ورق بزنید</p> -->
+		</div>
+	</div>
+	<div class="noteWrapper">
+		<div class="note" id="book">
+			<div class="pub">
+				<div class="page page1 active">
+					<div class="element img">
+						<img src="./img/img1.png">
+					</div>
+					<div class="element brand">
+						<img class="brand" src="./img/brand.svg">
+						<h3>نمایندگی رسمی شرکت <span>Wintech</span></h3>
+						<img class="logo" src="./img/logo.svg">
+					</div>
+					<a class="element footer" href="http://www.wintech.co.ir">
+						<p>www.wintech.ir</p>
+					</a>
+				</div>
+				<div class="page page8">
+					<div class="element list">
+						<h1>فهرست</h1>
+						<ul id="pageList">
+							<li>
+								<a href="#">مقدمه</a>
+								<span>3</span>
+							</li>
+							<li>
+								<a href="#">معرفی پروفیل وینتک</a>
+								<span>4</span>
+							</li>
+							<li>
+								<a href="#">تکنولوژی و ماشین‌آلات</a>
+								<span>5</span>
+							</li>
+							<li>
+								<a href="#">رنگ‌بندی</a>
+								<span>6</span>
+							</li>
+							<li>
+								<a href="#">جدول رنگ‌ها</a>
+								<span>7</span>
+							</li>
+							<li>
+								<a href="#">مزایای سیستم‌های درب و پنجره UPVC</a>
+								<span>8</span>
+							</li>
+							<li>
+								<a href="#">استاندارد ها</a>
+								<span>9</span>
+							</li>
+							<li>
+								<a href="#">پشتیبانی و خدمات به مشتریان</a>
+								<span>10</span>
+							</li>
+							<li>
+								<a href="#">معرفی پنجره صدف</a>
+								<span>11</span>
+							</li>
+							<li>
+								<a href="#">پروژه ها</a>
+								<span>12</span>
+							</li>
+							<li>
+								<a href="#">تماس با ما</a>
+								<span>13</span>
+							</li>
+						</ul>
+					</div>
+					<div class="element address">
+						<div><h4>آدرس دفتر مرکزی: </h4><p>کرمان، بلوار حمزه، نبش کوچه 7، ساختمان صدف، طبقه دوم، واحد 3</p></div>
+						<div><h4>آدرس کارخانه: </h4><p>کرمان، ابتدای جاده جوپار، شهرک صنعتی شماره یک، جنب مجتمع کارگاهی</p></div>
+						<div><h4>شماره تماس: </h4><p>03432443474 - 09131417426</p></div>
+					</div>
+					<div class="element footer">
+						
+						<div class="buttons">
+							<a href="./downloads/panjreh_estandard.pdf">مطالب آموزشی</a>
+							<a href="./downloads/Catalog.pdf">دانلود کاتالوگ</a>
+							<a href="./videos.html">ویدئو ها</a>
+						</div>
+					</div>
+				</div>
+				<div class="page page2">
+					<div class="element image">
+						<img src="./img/img5.jpg"/>
+					</div>
+					<div class="element content">
+						<h1 class="title">مقدمه</h1>
+						<div class="text">
+							<p>امروزه کنترل مصرف منابع انرژی و فرهنگ سازی استفاده صحیح از این منابع در جوامع بشری یکی از دغدغه های اصلی دولتمردان در جهان بشمار می آید. با توجه به افزایش جمعیت انسانی کره زمین و به تبع آن ازدیاد مصرف انرژی طی سالیان اخیر سیر صعودی را طی کرده است. لذا صاحبان صنایع مختلف جهت پاسخگویی به نیازمندی های مصرف کنندگان کالاهای تولیدی خود و حفظ بازارهای فروش، همواره در برنامه ریزی و تولید کالاهایی با راندمان بیشتر و مصرف انرژی کمتر بوده اند.</p>
+							<p>مسکن به دلیل نیاز اصلی و اولیه انسان ها همواره به عنوان یکی از کانون های اصلی مصرف انرژی مطرح بوده است و باتوجه به بررسی های علمی به عمل آمده در حال حاضر 30% از کل انرژی در بخش ساختمان به مصرف می رسد. درب و پنجره ها به دلیل حائل بودن فضای بیرونی و داخلی، در ساختمان نقش بسزائی در میزان مصرف انرژی را به خود اختصاص داده و عایق کاری مناسب در این بخش از ساختمان از اتلاف ممانعت نموده و موجبات آسایش ساکنان آن و صرفه جویی اقتصادی هر خانوار را به همراه خواهد داشت. سالهای 1960 میلادی در کشور های اروپایی مطرح و با توجه به مزایای متعدد این محصولات به ویژه جلوگیری از مصرف مازاد انرژی و صرفه جویی اقتصادی باعث گردیده مصرف این محصولات مورد استقبال عمومی قرار گیرد و باتوجه به سیر تکاملی این محصولات امروزه در بیشتر از 70% از پنجره های ساختمان ها در کشور های اروپایی از پروفیل های UPVC استفاده می گردد.</p>
+							<h4>میزان اتلاف انرژی در ساختمان</h4>
+							<img src="./img/enrgy.png" />
+							<p>از اواخر دهه هفتاد شمسی، با توجه سیر صعودی مصرف انرژی در کشور ایران و حمایت های یارانه ای دولت در بخش انرژی موجب بروز مشکلات در بودجه اداره کشور گردیده به طوری که طبق ارائه گزارش های کارشناسان ذیربط ادامه حمایت های یارانه ای توسط دولت جهت حامل های انرژی در سال های آتی مقدور نخواهد بود. بدین جهت موضوع کنترل مصرف و قطع یارانه های پرداختی به حامل های انرژی طی سالیان آتی توسط مسئولین مطرح و برنامه ریزی گردیده است. لذا در این راستا اهمیت در ساخت محصولاتی که انرژی کمتری را مصرف و یا موجب صرفه جویی در مصرف انرژی می گردند در صنایع مختلف چند برابر شده و به عنوان یکی از مولفه های اصلی در انتخاب کالا توسط مصرف کنندگان مطرح می باشد.</p>
+							<p>پروفیل های UPVC جهت ساخت انواع درب و پنجره های دو جداره از اواخر دهه هفتاد در کشور ایران مورد توجه قرار گرفته و با توجه به مزایای متعدد این محصول و کاهش مصرف انرژی در ساختمان ها مصرف این محصولات رو به افزایش بوده به طوری که امروزه در اکثر ساختمان های کشور از درب و پنجره های UPVC استفاده می گردد.</p>
+							<p>پروفیل های UPVC تولیدی این شرکت با برند تجاری وینتک از ابتدای دوره نیاز به این محصول در بازار کشور ایران حضور داشته و طی ده سال اخیر درب و پنجره های UPVC ساخته شده از پروفیل های وینتک توانسته است به اثبات کیفیت، تجهیز و تزئین کننده ساختمان ها در ایران باشد.</p>
+							<p>در این نرم افزار سعی گردیده است که اطلاعات عمومی و قسمتی از اطلاعات فنی محصولات وینتک در اختیار متخصصین صنعت ساختمان قرار گیرد.</p>
+						</div>						
+					</div>
+				</div>
+				<div class="page page12">
+					<div class="element video">
+						<div id="15474885594052809">
+							<script type="text/JavaScript" src="https://www.aparat.com/embed/H7AcP?data[rnddiv]=15474885594052809&data[responsive]=yes"></script>
+						</div>
+					</div>
+					<div class="element content">
+						<h1 class="title">معرفی پروفیل وینتک</h1>
+						<div class="text">
+							<p>وینتک از اواخر سال 1980 میلادی فعالیت خود را در زمینه تولید انواع پروفیل‌های UPVC مورد نیاز صنعت ساختمان در ابعاد و مقاطع مختلف آغاز نموده و با بیش از سه دهه فعالیت، پروفیل های تولیدی خود را در بازار مصرف کشورهای مختلف عرضه می‌نماید.</p>
+							<p>تهیه مواد اولیه استاندارد و استفاده از بهترین ماشین‌آلات و بهره‌وری از نیروی انسانی متخصص و کارآزموده در مکانیزم تولید و نظارت بر واحدهای فروش و ارائه خدمات فنی و پشتیبانی پس از فروش موجب گردیده که پروفیل‌های وینتک به عنوان یکی از محصولات شناخته شده در بازارهای جهانی مطرح و همواره رضایت‌مندی مصرف‌کنندگان را به همراه داشته باشد.</p>
+							<p>این مجموعه صنعتی جهت سرویس‌دهی مطلوب به مصرف‌کنندگان محصولات تولیدی خود، علاوه بر کارخانجات و انبارها و دفاتر فروش خود در کشور ترکیه، در کشورهای آلمان، روسیه، اوکراین، هندوستان، آذربایجان و تونس نیز کارخانجات تولید پروفیل‌های UPVC را احداث و همچنین در بیش از 54 کشور دفاتر و انبارهای فروش دایر نموده است.</p>
+							<p>با توجه به عرضه محصولات وینتک در ایران طی چندین سال گذشته، مدیران این شرکت با بررسی دقیق علمی و عملی طی مدت حضور و عرضه محصولات خود در کشور ایران و جهت فراهم‌آوری بهینه نیازهای مشتریان خود و همچنین سرویس‌دهی بهتر، در ابتدای سال 89 اقدام به برنامه‌ریزی و تاسیس کارخانه تولیدی این محصولات در کشور ایران نمودند که با سعی و تلاش پرسنل مسئول، فاز یک این کارخانه در ابتدای آبان ماه سال 90، در زمینی به وسعت 36000 مترمربع و زیر بنای تولیدی به وسعت 16000 متر مربع در شهر تبریز افتتاح و شروع به فعالیت، تولید و عرضه انواع پروفیل‌های UPVC استاندارد مورد نیاز این صنعت نموده است.</p>
+						</div>						
+					</div>
+				</div>
+				<div class="page page3">
+					<div class="element content">
+						<h1 class="title">تکنولوژی و ماشین‌آلات</h1>
+						<div class="text">
+							<p>در مجموعه‌های صنعتی وینتک از آخرین تکنولوژی و ماشین‌آلات موجود در این صنعت استفاده گردیده و با اتکاء به دانش فنی و مهارت نیروهای کارآزموده و متخصص خود و استفاده از بهترین تجهیزات و ماشین‌آلات توانسته است پروفیل‌های UPVC استاندارد و با کیفیت مورد نیاز بازارهای مصرف را تولید و عرضه نماید.</p>
+							<p>در مجموعه صنعتی تاسیس شده در کشور ایران از آخرین دستآوردهای تکنولوژی شرکت KRAUSS MAFFEI کشور آلمان در بخش ماشین‌آلات اکسترودر بهره‌مند گردیده و سیستم میکسینگ و تولید مواد اولیه بر مبنای جدیدترین تکنولوژی انتقال مواد اولیه، به صورت تمام اتوماتیک و بدون دخالت نیروی انسانی، به خطوط تولید پایه‌گذاری شده است.</p>
+							<p>فاز یک کارخانه تولید وینتک در ایران با استقرار 12 خط اکسترودر جهت تولید و عرضه انواع پروفیل‌های UPVC آغاز گردیده و با احداث 16000 مترمربع سالن‌های تولیدی و با در نظر گرفتن تمامی زیر ساخت‌های لازم در جهت توسعه روند تولیدی خود، امکانات لازم جهت نصب 30 خط اکسترود را در سالن‌های تولید خود ایجاد و پیش‌بینی تمامی مراحل آتی توسعه و افزایش تولید شرکت را بر اورد و مهیا نموده است.</p>
+							<p></p>
+							<p></p>
+						</div>						
+					</div>
+					<div class="element image">
+						<img src="./img/img2.jpg"/>
+					</div>
+				</div>
+				<div class="page page5">
+					<div class="element image">
+						<div id="colorSlider">
+							<img src="./img/wincolor1.png" />
+							<img src="./img/wincolor2.png" />
+							<img src="./img/wincolor3.png" class="active" />
+							<img src="./img/wincolor4.png" />
+							<img src="./img/wincolor5.png" />
+						</div>
+					</div>
+					<div class="element btnColor" id="winColor">
+						<button id="1">
+							<img src="./img/color1.jpg" />
+						</button>
+						<button id="2">
+							<img src="./img/color2.jpg" />
+						</button class="active">
+						<button id="3">
+							<img src="./img/color3.jpg" />
+						</button>
+						<button id="4">
+							<img src="./img/color4.jpg" />
+						</button>
+						<button id="5">
+							<img src="./img/color5.jpg" />
+						</button>
+					</div>
+					<div class="element content">
+						<h1 class="title">رنگ‌بندی</h1>
+						<div class="text">
+							<p>پروفیل‌های UPVC به دلیل رنگ ترکیبات مواد اولیه عمدتاً بر پایه رنگ سفید تولید می‌گردند که این سفیدی و شفافیت نیز با توجه به فرمولاسیون و کیفیت مواد اولیه و ترکیب مواد استفاده شده در هر شرکتی متغیر بوده، به طوری که در مقایسه با تولیدات شرکت‌های مختلف، تفاوت رنگ و شفافیت کاملاً محسوس می‌باشد.</p>
+							<p>در کارخانجات صنعتی وینتک در ایران سعی گردیده است که با استفاده از بهترین مواد اولیه اروپایی، پروفیل‌هایی به رنگ سفید و با حداکثر شفافیت ممکن تولید و به بازارهای مصرف عرضه گردد.</p>
+						</div>
+					</div>
+				</div>
+				<div class="page page13">
+					<div class="element image">
+						<img id="imgSlide" src="./img/img8.jpg">
+					</div>
+					<div class="element content">
+						<h1 class="title">جدول رنگ ها</h1>
+						<div class="text">
+								<p>در کارخانجات صنعتی وینتک در ایران جهت افزایش تنوع محصولات و پاسخگویی به سلیقه‌های مختلف مشتریان و برطرف نمودن نیازهای معماران در طراحی نماهای ساختمان‌ها، اقدام به تولید پروفیل با پوشش‌های رنگ لمینیت نیز نموده است.</p>
+								<p>پوشش‌های پی وی سی لمینیت برای پروفیل‌های وینتک از شرکت‌های معتبر اروپایی از قبیل RENOLT انگلستان تهیه می‌گردد.</p>
+							<ul>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color1.jpg">
+									</div>
+									<h2>Ice Cream</h2>
+									<p>49113</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color2.jpg">
+									</div>
+									<h2>Midnight Blue</h2>
+									<p>49111</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color3.jpg">
+									</div>
+									<h2>Chartwell Green</h2>
+									<p>49246</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color4.jpg">
+									</div>
+									<h2>Fire Green</h2>
+									<p>49110</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color5.jpg">
+									</div>
+									<h2>Racing Red</h2>
+									<p>49112</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color6.jpg">
+									</div>
+									<h2>Royal Red</h2>
+									<p>49179</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color7.jpg">
+									</div>
+									<h2>Rioja Red</h2>
+									<p>49103</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color8.jpg">
+									</div>
+									<h2>Hazy Gray</h2>
+									<p>49124</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color9.jpg">
+									</div>
+									<h2>Slate Gray</h2>
+									<p>49229</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color10.jpg">
+									</div>
+									<h2>Gale Gray</h2>
+									<p>49122</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color11.jpg">
+									</div>
+									<h2>Cocoa Brown</h2>
+									<p>49123</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color12.jpg">
+									</div>
+									<h2>Back Brown</h2>
+									<p>49116</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color13.jpg">
+									</div>
+									<h2>Winchester XA</h2>
+									<p>49240</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color14.jpg">
+									</div>
+									<h2>Siena PL</h2>
+									<p>49254</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color15.jpg">
+									</div>
+									<h2>Siena PR</h2>
+									<p>49233</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color16.jpg">
+									</div>
+									<h2>Siena PN</h2>
+									<p>49237</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color17.jpg">
+									</div>
+									<h2>Sherwood W</h2>
+									<p>49201</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color18.jpg">
+									</div>
+									<h2>Sherwood G</h2>
+									<p>49158</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color19.jpg">
+									</div>
+									<h2>Piedmont A</h2>
+									<p>49186</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color20.jpg">
+									</div>
+									<h2>Anbassador B</h2>
+									<p>49107</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color21.jpg">
+									</div>
+									<h2>Regency A</h2>
+									<p>49177</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color22.jpg">
+									</div>
+									<h2>Shougun AD</h2>
+									<p>49196</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color23.jpg">
+									</div>
+									<h2>Shougun AC</h2>
+									<p>49197</p>
+								</li>
+								<li>
+									<div class="color">
+										<img src="./img/chart_color24.jpg">
+									</div>
+									<h2>Shougun AF</h2>
+									<p>49198</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="page page4">
+					<div class="element content">
+						<h1 class="title">مزایای سیستم‌های درب و پنجره UPVC</h1>
+						<div class="text">
+							<p>سیستم‌های درب و پنجره ساخته شده از پروفیل‌های تولیدی وینتک علاوه بر زیبایی و ظرافت ظاهری دارای مزیت‌های متعدد می باشد که در نهایت موجبات آرامش و آسایش ساکنان ساختمان‌های اداری و مسکونی را فراهم می آورد که در ذیل به برخی از این موارد اشاره گردیده است:</p>
+							<ul>
+								<li>کاهش هزینه مصرف انرژی جهت تامین حرارت و برودت مورد نیاز ساختمان به دلیل عایق بودن درب و پنجره‌های UPVC</li>
+								<li>کاهش آلودگی صوتی به دلیل عایق بودن درب و پنجره‌های UPVC</li>
+								<img src="./img/img4.jpg">
+								<li>عایق در برابر نفوذ گردوغبار محیط‌های بیرونی به دلیل استفاده از لاستیک‌های درزبندی و با طراحی خاص</li>
+								<li>مقاومت در برابر نفوذ آب باران به دلیل استفاده از لاستیک‌های درزبندی و تعبیه شیارها و دریچه‌های تخلیه آب باران</li>
+								<img src="./img/img5.jpg">
+								<li>عدم نیاز به رنگ‌آمیزی و سرویس‌های مکرر جهت نگهداری در دوره‌های زمانی آتی</li>
+								<li>عدم تغییر رنگ و حالت در برابر تابش اشعه خورشید</li>
+								<li>دوام و استحکام بالا و کاربرد زمانی طولانی</li>
+								<img src="./img/img6.jpg">
+								<li>غیر قابل اشتعال در برابر آتش‌سوزی‌ها</li>
+								<li>مقاومت در برابر پوسیدگی و زنگ‌زدگی و اکسیداسیون</li>
+								<li>قابلیت نصب انواع یراق‌آلات و تامین امنیت محیط</li>
+								<li>قابلیت نصب انواع شیشه‌های چند جداره</li>
+								<img src="./img/img7.jpg">
+							</ul>
+							<p>قابل ذکر است جهت نگهداری صحیح از پنجره‌های UPVC ساخته شده از پروفیل‌های وینتک، جدا نمودن روکش محافظ پروفیل‌ها حداکثر طی 2 ماه پس از تاریخ نصب از روی پروفیل‌ها و همچنین نظافت سطوح بیرونی درب و پنجره‌ها با پارچه نرم و آب و صابون جهت جلوگیری از رسوب گردوغبار ناشی از محیط‌های بیرون هر شش ماه یک بار ضروری می‌باشد.</p>
+						</div>
+					</div>
+				</div>
+				<div class="page page9">
+					<div class="element image">
+						<img src="./img/standard1.png"/>
+					</div>
+					<div class="element content">
+						
+						<h1 class="title">استاندارد ها</h1>
+						<div class="text">
+							<p>پروفیل های تولید شده در گروه کارخانجات وینتک با توجه به رعایت استانداردهای لازم طی فرایند تولید و کنترل کیفی پس از مراحل تولید به کشورهای متعدد صادر و موفق به اخذ استانداردهای مختلف گردیده است که مهمترین آنها می توان به استاندارد RAL-GZ 716/1 کشور آلمان اشاره نمود. سیستم های درب و پنجره UPVC ساخته شده از پروفیل های وینتک علاوه بر کنترل های کیفی در آزمایشگاه های شرکت، از موسسه تحقیقاتی IFT ROSEINHEIM آلمان نیز گواهینامه کیفیت و تاییدیه فنی دریافت نموده است.</p>
+							<p>تمامی پروفیل های تولیدی در کارخانه وینتک در ایران مطابق با چک لیست موسسه استاندارد RAL کشور آلمان تولید و به بازارهای مصرف ارائه می گردد. همچنین پروفیل های وینتک از نظر کیفیت موفق به اخذ گواهینامه استاندارد اجباری سازمان ملی استاندارد ایران و همچنین گواهینامه فنی مرکز تحقیقات ساختمان و مسکن وزارت راه و شهرسازی نیز گردیده است.</p>
+						</div>
+					</div>
+				</div>
+				<div class="page page10">
+					<div class="element content">
+						<h1 class="title">پشتیبانی و خدمات به مشتریان</h1>
+						<div class="text">
+							<p>پشتیبانی فنی و خدمات رسانی همواره سرلوحه سیاست های فروش در مجموعه های وینتک بوده و با داشتن نیروهای متخصص و ماهر در واحد های فنی خود آماده ارائه خدمات فنی و آموزش های دوره ای به مشتریان و پرسنل کارگاه های طرف قرارداد شرکت می باشد.</p>
+							<p>کارخانجات وینتک در ایران با تاسیس انبار مرکزی و تامین کالا در شهر تهران، تمامی نیاز ها شامل لوازم جانبی ساخت درب و پنجره های UPVC همانند پروفیل های تقویتی گالوانیزه، مختص پروفیل های وینتک و همچنین یراق آلات و لاستیک های درزگیر E.P.D.M را به حداقل رسانده و با ارائه راهکارهای تولید و آموزش های مربوطه، همواره کنار مشتریان خود بوده و همکاری های لازم را به انجام می رساند. تمامی نیازهای فنی شرکت های طرف قرارداد وینتک شامل تامین نرم افزار ساخت درب و پنجره های UPVC و تامین قالب ها و تیغچه های دستگاه های مونتاژ در کمترین زمان ممکن تهیه و در اختیار کارگاه های طرف قرار داد قرار می گیرد.</p>
+						</div>						
+					</div>
+					<div class="element image">
+						<img src="./img/support-services.png"/>
+					</div>
+				</div>
+				<div class="page page11">
+					<div class="element image">
+						<img src="./img/img14.jpg"/>
+					</div>
+					<div class="element content">
+						<h1 class="title">معرفی پنجره صدف</h1>
+						<div class="text">
+							<p>شرکت صنایع پیش ساخته صدف به عنوان اولین تولیدکننده درب و پنجره UPVC با برند Wintech از اواخر سال 1382 در شهر کرمان تاسیس گردید. هدف این شرکت از تولید این محصولات کمک به بهینه سازی مصرف انرژی ، موضوع مبحث 19 ساختمان سازمان نظام مهندسی کشور می باشد.</p>
+							<p>تولیدات این شرکت در فضایی به مساحت 1500 متر مربع واقع در شرکت صنعتی شماره یک کرمان صورت می گیرد و کلیه استاندارد های روز دنیا در این محصولات لحاظ می گردد.</p>
+							<p>در سال های اخیر یکی دیگر از محصولات شرکت آدپروفیل به نام Plaspen به تولیدات این شرکت اضافه گردید. از آنجایی که این شرکت مشتری‌مداری را سرلوحه کار خود قرار داده است. امید دارد خوشنودی و رضایتمندی کلیه کارفرمایان، پیمانکاران و همشهریان عزیز را برآورده کرده باشد.</p>
+							<h4>آدرس دفتر مرکزی:</h4>
+							<div>کرمان، بلوار حمزه، نبش کوچه 7، ساختمان صدف، طبقه دوم، واحد 3</div>
+							<h4>آدرس کارخانه:</h4>
+							<div>کرمان، ابتدای جاده جوپار، شهرک صنعتی شماره یک، جنب مجتمع کارگاهی</div>
+							<h4>شماره تماس:</h4>
+							<div>03432443474 - 09131417426</div>
+						</div>						
+					</div>
+				</div>
+				<div class="page page6">
+					<div class="element image">
+						<div class="slider" id="slider1">
+							<div class="slide active">
+								<img src="./img/projects/proj20.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj2.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj3.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj4.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj5.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj6.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj7.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj8.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj9.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj10.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj11.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj12.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj13.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj14.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj15.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj16.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj17.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj18.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj19.jpg"/>
+							</div>
+							<div class="slide">
+								<img src="./img/projects/proj1.jpg"/>
+							</div>
+						</div>
+					</div>
+					<div class="element content">
+						<h1 class="title">پروژه ها</h1>
+						<div class="text">
+							<p>شرکت صدف نه تنها از نظر سیستماتیک و استحکام و مناسب بودن قیمت بلکه از نظر استاتیک و زیبایی و قابلیت انتخاب رنگ بی‌نهایت نسبت به سلیقه مشتری نیز ارائه محصول می نماید.</p>
+							<p>بدین ترتیب در شرکت صدف هر چیز مورد نیاز در صنعت درب و پنجره UPVC و حتی بیشترین را می توان یافت.</p>
+							<p>در ترکیه برای اولین بار سطوح خارجی را به کمک سیستم CO-EX به ضخامت نیم میلیمتر آکریلیک و سطوح داخلی را به کمک سیستم لامیناسیون با روکش های مختلف طرح چوبی، Wintech ابداع کرده است. به علت نفوذ ناپذیری سطوح رنگی در مقابل تشعشعات نور خورشید با مرور زمان در ساختمان شیمیایی سطوح تاثیری نکرده و از شفافیت و کیفیت رنگ کاسته نمی شود.</p>
+							<p>سطوح داخلی را می توان به صورت رنگ سفید که متعلق به خود UPVC سخت می باشد استفاده کرد و یا به کمک Folyo که منشا آن هم UPVC می باشد با انتخاب رنگ و فرم آن که انواع مختلف طرح های چوبی را شامل می شود با سیستم فشار و حرارت روی UPVC روکش داه شده و استفاده نمود.</p>
+							<p>چنانکه می بینید شرکت صدف به غیر از مواردی چون استحکام، طول عمر زیاد و مقاومت در مقابل عوامل طبیعی با ظرافت در ساخت و زیبایی و رنگ نیز به صورت کامل نیاز های مشتریان خود را جوابگو است.</p>
+						</div>
+					</div>
+				</div>
+				<div class="page page7">
+					<from action="/" method="post" class="element form">
+						<h1 class="title">با ما تماس بگیرید</h1>
+						<div class="subtitle">
+							<p>پاسخگویی 24 ساعته در تمامی ایام هفته</p>
+						</div>
+						<label>نام و نام خانوادگی</label>
+						<input type="text"/>
+						<label>شهر</label>
+						<input type="text"/>
+						<label>شماره تماس</label>
+						<input type="number"/>
+						<label>متن پیام</label>
+						<textarea rows="4" cols="50"></textarea>
+						<button type="submit">ارسال پیام</button>
+					</from>
+					<div class="element footer">
+						<a href="http://www.wintech.ir">
+							<img src="./img/iconInternet.svg">
+						</a>
+						<a href="https://t.me/sadafbarez">
+							<img src="./img/iconTelegram.svg">
+						</a>
+						<a href="https://www.instagram.com/wintech.kerman.upvc/">
+							<img src="./img/iconInstagram.svg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./js/jquery/jquery-1.11.3.min.js"></script>
+	<script src="./js/jquery/jquery.mobile.touch.events.min.js"></script>
+	<script src="./js/jquery.backDetect.min.js"></script>
+	<script src="./js/notejs.js"></script>
+	<script src="./js/app.js"></script>
+	<script>
+		$('#book').note({
+		
+		});
+		$('#slider1').slider({
+
+		});
+		$('#slider2').slider({
+
+		});
+		$('#winColor').sliderBtn({
+
+		});
+
+		// function openInNewTab(url) {
+		// 	var win = window.open(url, '_blank');
+		// 	win.focus();
+		// }
+		// $('#wintethWebsite').on('click', function(){
+		// 	openInNewTab('//www.wintech.ir')
+		// });
+	</script>
+	<script>
+		$(window).load(function(){
+			$('body').backDetect(function(e){
+				var book = $("#book .pub").children();
+				for (var j = 0; j < book.length; j++) {
+					$(book[j]).removeClass("active");
+					$(book[j]).removeClass("animated");
+					$(book[j]).removeClass("slideOutLeft");
+					$(book[j]).removeClass("slideInLeft");
+				}
+				$(book[1]).addClass("active");
+				$(book[1]).removeClass("animated");
+				$(book[1]).removeClass("slideOutLeft");
+				$(book[1]).removeClass("slideInLeft");
+				e.preventDefault();
+			});
+		})
+	</script>
+    <!-- Start iliama Analytics Code -->
+<script type="text/javascript">
+	var stat_settings = stat_settings || [];
+	stat_settings.push(['site_id','2418']);
+	stat_settings.push(['site_url','nahal.me']);
+(function(){
+	var d=document,
+	ias = d.createElement('script');
+	ias.type = 'text/javascript';
+	ias.async = true;
+	ias.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.iliama.com/stats/engine/ias.js';
+	(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(ias);
+})();
+</script>
+<a style="display:none" rel="follow" href="https://www.iliama.com/stats">امارگیر وبلاگ</a><a style="display:none" rel="follow" href="https://www.iliama.com/stats">امارگیر سایت</a><a style="display:none" rel="follow" href="https://www.iliama.com/time">تقویم و ساعت</a>
+<!-- End iliama Analytics Code -->
+<!-- Start iliama Analytics Code -->
+<script type="text/javascript">
+	var stat_settings = stat_settings || [];
+	stat_settings.push(['site_id','2713']);
+	stat_settings.push(['site_url','nahal.me']);
+(function(){
+	var d=document,
+	ias = d.createElement('script');
+	ias.type = 'text/javascript';
+	ias.async = true;
+	ias.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.iliama.com/stats/engine/ias.js';
+	(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(ias);
+})();
+</script>
+<a style="display:none" rel="follow" href="https://www.iliama.com/stats">امارگیر وبلاگ</a><a style="display:none" rel="follow" href="https://www.iliama.com/stats">امارگیر سایت</a><a style="display:none" rel="follow" href="https://www.iliama.com/time">تقویم و ساعت</a>
+<!-- End iliama Analytics Code -->
+</body>
+</html>

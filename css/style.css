@@ -1,0 +1,479 @@
+.note .stripTag {
+	background-color: #0075ae;
+}
+/* ------------ Content ------------ */
+.content {
+	width: 90%;
+	padding: 3% 5% 3% 5%;
+	background-color: #EEE;
+	flex-basis: 0;
+	overflow: scroll;
+}
+.content .text {
+	overflow: scroll;
+	overflow-x: hidden;
+	text-align: right;
+}
+.content .text h3 {
+	line-height: 3rem;
+	color: #888;
+}
+.content .text p {
+	padding-left: 5px;
+}
+.content .title {
+	text-align: right;
+    font-size: 20px;
+    color: #666;
+}
+.content img {
+	width: 100%;
+	margin: 10px 0;
+}
+.content .text ul {
+	list-style:inherit;
+}
+.content .text ul li {
+	text-indent: 15px;
+}
+/* ------------ Form ------------ */
+.form {
+	width: 90%;
+	padding: 3% 5% 3% 5%;
+	background-color: #EEE;
+}
+/* ------------ List ------------ */
+.list {
+	width: 90%;
+	padding: 3% 5% 3% 5%;
+	background-color: #EEE;
+}
+.list ul {
+
+}
+.list ul li {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+/* ------------ PAGE 1 ------------ */
+.page1 {
+	background-color: #e7e5e8;
+}
+.page1 .element {
+	background-color: transparent;
+}
+.page1 .element img{
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+}
+.page1 .brand {
+
+}
+.page1 .brand img {
+	height: auto;
+}
+.page1 .brand .brand {
+	width: 40%;
+}
+.page1 .brand .logo {
+	width: 40%;
+	padding: 10px 0;
+}
+.page1 .brand h3 {
+	color: #0075ae;
+	font-weight: 400;
+}
+.page1 .brand h3 span {
+	color: #e93830;
+	font-weight: bold;
+}
+.page1 .footer {
+	width: 100%;
+	height: 36px;
+	background-color: #0e4d8e;
+	color: #fff;
+	flex-grow: 0;
+}
+.page1 .footer p {
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 12px;
+}
+/* ------------ PAGE 2 ------------ */
+.page2 {
+	background-color: #f7f7f7;
+}
+.page2 .element {
+	background-color: transparent;
+}
+.page2 .video {
+	height: auto;
+    flex-grow: 0;
+}
+.page2 .video img {
+    width: 100%;
+}
+.page2 .element.image {
+	flex-grow: 0;
+}
+.page2 .element.image img {
+	height: auto;
+	width: 100%;
+}
+.page2 .content {
+
+}
+.page2 .content .text {
+	color: #333;
+}
+/* ------------ PAGE 3 ------------ */
+.page3 {
+	background-color: #f7f7f7;
+}
+.page3 .element {
+	background-color: transparent;
+}
+.page3 .element.image {
+	flex-grow: 0;
+}
+.page3 .element.image img {
+	height: auto;
+	width: 100%;
+}
+.page3 .content {
+
+}
+.page3 .content .text {
+	color: #333;
+}
+/* ------------ PAGE 4 ------------ */
+.page4 {
+	background-color: #f7f7f7;
+}
+.page4 .element {
+	background-color: transparent;
+}
+.page4 .content {
+
+}
+.page4 .content .text {
+	color: #333;
+}
+.page4 .content ul {
+
+}
+.page4 .content ul li {
+	
+}
+/* ------------ PAGE 5 ------------ */
+.page5 {
+	background-color: #f7f7f7;
+}
+.page5 .element {
+	background-color: transparent;
+}
+.page5 .btnColor {
+	height: 50px;
+	flex-grow: 0;
+	flex-direction: row;
+}
+.page5 .btnColor button {
+	width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    margin: 15px;
+    background-position: center;
+    background-size: cover;
+}
+.page5 .btnColor button img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.page5 .image {
+	height: auto;
+	flex-grow: 0;
+}
+.page5 #colorSlider img {
+	display: none;
+}
+.page5 #colorSlider img.active {
+	display: block;
+}
+.page5 .image img {
+	height: auto;
+	width: 50%;
+    margin: 10px 25%;
+}
+.page5 .btnColor .active {
+	border: 2px solid #f7f7f7;
+}
+button {
+	outline: none;
+}
+.page5 .content {
+
+}
+.page5 .content .text {
+	color: #333;
+}
+
+/* ------------ PAGE 6 ------------ */
+.page6 {
+	background-color: #fff;
+}
+.page6 .image {
+    flex-grow: 0;
+    height: auto;
+}
+.page6 .slider {
+	width: 100%;
+	height: auto;
+}
+.page6 .content .text {
+	color: #333;
+}
+/* ------------ PAGE 7 ------------ */
+.page7 .form .title, .page7 .form .subtitle {
+	color: #333;
+}
+.page7 .form .subtitle {
+	margin-bottom: 40px;
+}
+.page7 .form label {
+	color: #333;
+	text-align: right;
+	margin-bottom: 10px;
+}
+.page7 .form input {
+	padding: 5px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	outline: none;
+}
+.page7 .form textarea {
+	padding: 5px;
+	border-radius: 5px;
+	outline: none;
+}
+.page7 .form button {
+	color: #fff;
+	background-color: #0e4d8e;
+	border: none;
+	padding: 5px 0;
+	margin-top: 15px;
+	font-family: 'iransans';
+	border-radius: 5px;
+}
+.page7 .footer {
+	flex-grow: 0;
+	width: 100%;
+	height: 50px;
+	flex-direction: row-reverse;
+	background-color: #0e4d8e;
+}
+.page7 .footer a {
+	width: 33.33333%;
+    height: 100%;
+	justify-content: center;
+	border: none;
+	background-color: #0e4d8e;
+	align-items: center;
+    display: flex;
+}
+.page7 .footer a img {
+	max-width: 25px;
+	max-height: 25px;
+}
+/* ------------ PAGE 8 ------------ */
+.page8 {
+	background-color: #303841;
+}
+.page8 .list {
+	background-color: transparent;
+}
+.page8 .list li {
+
+}
+.page8 .list a {
+	text-decoration: none;
+	color: #fff;
+}
+.page8 .footer {
+	flex-grow: 0;
+	height: auto;
+	background-color: transparent;
+	font-size: 15px;
+}
+.page8 .footer .buttons {
+	display: flex;
+}
+.page8 .footer a {
+	width: 33.33333%;
+    height: 40px;
+    background-color: #e93830;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+	color: #fff;
+	border-left: 1px solid rgba(255,255,255,0.2);
+}
+.page8 .footer a:first-child {
+	border: none;
+}
+.page8 .address {
+	width: 90%;
+	background-color: transparent;
+	color: #fff;
+	margin: 0 5%;
+	text-align: right;
+}
+.page8 .address div h4 {
+	display: inline;
+}
+.page8 .address div p {
+	display: inline;	
+}
+/* ------------ PAGE 9 ------------ */
+.page9 {
+	background-color: #fff;
+}
+.page9 .element.image {
+	flex-grow: 0;
+	background-color: #EEE;
+}
+.page9 .element.image img {
+	height: auto;
+	width: 100%;
+}
+.page9 .content img {
+	margin: 0;
+}
+.page9 .slider {
+	width: 100%;
+	height: auto;
+	margin: 10px 0;
+}
+.page9 .content .text {
+	color: #333;
+}
+/* ------------ PAGE 10 ------------ */
+.page10 {
+	background-color: #f7f7f7;
+}
+.page10 .element {
+	background-color: transparent;
+}
+.page10 .element.image {
+	flex-grow: 0;
+}
+.page10 .element.image img {
+	height: auto;
+	width: 100%;
+}
+.page10 .content {
+
+}
+.page10 .content .text {
+	color: #333;
+}
+/* ------------ PAGE 11 ------------ */
+.page11 {
+	background-color: #f7f7f7;
+}
+.page11 .element {
+	background-color: transparent;
+}
+.page11 .element.image {
+	flex-grow: 0;
+}
+.page11 .element.image img {
+	height: auto;
+	width: 100%;
+}
+.page11 .content {
+
+}
+.page11 .content .text {
+	color: #333;
+}
+/* ------------ PAGE 12 ------------ */
+.page12 {
+	background-color: #f7f7f7;
+}
+.page12 .element {
+	background-color: transparent;
+}
+.page12 .video {
+	height: auto;
+    flex-grow: 0;
+}
+.page12 .video img {
+    width: 100%;
+}
+.page12 .element.image {
+	flex-grow: 0;
+}
+.page12 .element.image img {
+	height: auto;
+	width: 100%;
+}
+.page12 .content {
+
+}
+/* ------------ PAGE 13 ------------ */
+.page13 {
+	background-color: #f7f7f7;
+}
+.page13 .element {
+	background-color: transparent;
+}
+.page13 .element.image {
+	flex-grow: 0;
+}
+.page13 .element.image img {
+	height: auto;
+	width: 100%;
+}
+.page13 ul {
+	display: flex;
+    flex-direction: column;
+}
+.page13 .text ul li {
+	margin: 10px 0;
+	text-indent: 0;
+}
+.page13 .color {
+	width: 40%;
+    height: 60px;
+	background: #333;
+	float: right;
+	margin-left: 20px;
+}
+.page13 .color img {
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.page13 .content .text ul li h2 {
+	text-align: left;
+}
+.page13 .content .text ul li p {
+	font-size: 1.5em;
+	text-align: left;
+}
+.page13 .element.image img {
+	height: auto;
+	width: 100%;
+}
+.page13 .content {
+	
+}

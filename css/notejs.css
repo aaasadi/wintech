@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.help {
+	position: absolute;
+    z-index: 999;
+	display: none;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+}
+.help .helpBtn {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+    background-color: rgb(27, 186, 150);
+    border-radius: 30px;
+}
+.help .helpBtn img {
+	border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #f7f7f7;
+}
+.help .helpBtn p {
+	font-size: 1.8em;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 15px;
+}
+.noteWrapper {
+	width: 100%;
+	height: 100%;
+}
+.note{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 99;
+}
+.note .pub{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.note .pub .page{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: none;
+	
+}
+.note .pub .active {
+    display:flex;
+	left: 0;
+}
+
+.note .counter{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    font-family: iransans;
+    color: #333;
+    background-color: rgba(255,255,255,0.5);
+    padding: 3px 8px;
+    border-radius: 30px;
+    z-index: 9999;
+}
+.note .stripTag {
+	height: 3px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #fece0c;
+}
+.page {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.page1, .page3, .page5, .page7, .page9 {
+	background: #303841;
+	color: #fff;
+}
+.page2, .page4, .page6, .page8, .page4 {
+	background: #2e4750;
+	color: #fff;
+}
+.element {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fff;
+	flex-grow: 1;
+}
+
+/* ------------------------ */
+/*       NoteJS Style       */
+/* ------------------------ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* -------- Font -------- */
+
+
+
+/* -------- links -------- */
+
+a {
+	text-decoration: none;
+}
+
+/* -------- Text frame -------- */
+
+.textframe {
+	overflow: scroll;
+	overflow-x: hidden;			
+}
+
+/* -------- image frame -------- */
+
+.imgframe {
+	
+}
+.imgframe img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* -------- Slider -------- */
+
+.slider {
+	position: relative;
+}
+.slider .slide {
+	display: none;
+}
+.slider .slide.active {
+	display: flex;
+}
+.slider .slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.slider .handle {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #222;
+}
+.slider .handle button {
+	background-color: transparent;
+	border: none;
+	padding: 10px 20px;
+	color: #fff
+}
+.slider .handle button .icon {
+	width: 15px;
+	max-width: 15px;
+	max-height: 15px
+}
+
+/* -------- Slider -------- */
+
+.sliderBtn .slide {
+	display: none;
+}
+.sliderBtn .slide.active {
+	display: flex;
+}
+
+/* -------- Scroll bar -------- */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
